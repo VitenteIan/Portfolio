@@ -14,25 +14,86 @@
   </head>
 <body>
     <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-logo">&lt;Dev/&gt;</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="nav-hire">Hire Me</button>
     </nav>
 
     <section id="hero">
-        <h1>Hi, i'm Ian Gabriel Vitente</h1>
-        <p>WEB DEVELOPER</p>
-        <button>View my Work</button>
+
+        <div class="hero-grid-bg"></div>
+        <div class="hero-glow"></div>
+
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, world! 👋 I am</p>
+            <h1>Ian Gabriel Vitente</h1>
+            <p class="hero-title">
+            Web Developer & Software Engineer
+            <span class="cursor">|</span>
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('projects')">
+                    View Projects →
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">
+                    Contact Me
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section id="about">
-        <p class="section-label">// about me</p>
-        <h2>About Me</h2>
-        <p>
-            I'm a passionate web developer based in the Philippines.
-            I love building clean and user-friendly web applications.
-        </p>
+        <div class="about-container">
+            <div class="about-text">
+                <p class="section-label">// about me</p>
+                <h2>Who Am I?</h2>
+                <p>
+                    I'm a passionate web and software developer based in the
+                    Philippines. I specialize in building clean, performant, and
+                    user-friendly web applications using modern technologies.
+                </p>
+                <p>
+                    When I'm not coding, I'm exploring new tools, contributing
+                    to open source, or leveling up my skills. I love solving
+                    real problems through elegant code.
+                </p>
+                <div class="about-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>TypeScript</span>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+
+            <div class="about-avatar">
+                <div class="avatar-box">
+                    👨‍💻
+                    <div class="avatar-badge">⚡</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="skills">
@@ -151,5 +212,41 @@
             </div>
         </div>
     </section>
+
+    <section id="contact">
+        <p class="section-label">// get in touch</p>
+        <h2>Let's Work Together</h2>
+        <p class="contact-desc">
+            Open for freelance projects, full-time roles, or just a chat about tech. Drop me a message!
+        </p>
+
+        <div class="contact-form">
+
+            <div class="form-row">
+                <input type="text" placeholder="Your Name" class="contact-input" />
+                <input type="email" placeholder="Your Email" class="contact-input" />
+            </div>
+
+            <input type="text" placeholder="Subject" class="contact-input" />
+
+            <textarea
+            placeholder="Your message..."
+            class="contact-input"
+            rows="5"
+            ></textarea>
+
+            <button class="submit-btn">Send Message ✉️</button>
+
+        </div>
+    </section>
+
+    </section>
+
+    <footer>
+      <p>Built with <span class="heart">♥</span> using HTML, CSS & JS</p>
+      <p class="footer-name">© 2025 Ian Gabriel Vitente</p>
+    </footer>
+
+  </body>
 </body>
 </html>
